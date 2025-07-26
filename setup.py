@@ -4,8 +4,8 @@ import subprocess
 import os
 
 setup(
-    name='voicestream',  # Package name
-    version='0.0.0',  # Version of your package
+    name='voxstream',  # Package name
+    version='0.0.1',  # Version of your package
     author='enes kuzucu',  # Your name
     
     description=' lightweight voice streamer ', 
