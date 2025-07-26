@@ -1,19 +1,19 @@
 from setuptools import setup, find_packages
-import setuptools
-import subprocess
-import os
 
 setup(
     name='voxstream',  # Package name
-    version='0.0.1',  # Version of your package
+    version='0.1.0',  # Version of your package
     author='enes kuzucu',  # Your name
     
-    description=' lightweight voice streamer ', 
+    description='A lightweight, high-performance voice streaming engine for real-time AI applications', 
     long_description=open('README.md').read(),  # Long description from a README file
     long_description_content_type='text/markdown',  # Type of the long description
     
     packages=find_packages(),  # Automatically find packages in the directory
-    install_requires=[ 'python-dotenv', 'voicechatengine'],
+    install_requires=[
+        'sounddevice>=0.4.0',
+        'numpy>=1.21.0',  # Optional but recommended for better performance
+    ],
     entry_points={
         'console_scripts': [
             'voxterm=voxterm.launcher:main',
